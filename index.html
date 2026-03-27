@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhu | Portfolio</title>
+
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #05070a; }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+            border: 2px solid #05070a;
+        }
+        ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body class="dark-theme">
+
+<div id="loader">
+    <div class="loader-content">
+        <div class="cloud-icon">☁️</div>
+        <div class="loader-text">
+            <span id="loader-msg">Initializing AWS Environment...</span>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        <div class="loader-subtext">gama_engine_deploy --v2.4.0</div>
+    </div>
+</div>
+
+<div id="particles"></div>
+<div id="cursor-glow"></div>
+
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">Gaddam Madhukanth</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+               <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="#" target="_blank" class="nav-resume-btn">Resume ↗️</a>
+
+                <div class="nav-share-container">
+                    <button id="navShareBtn" class="nav-share-btn" title="Share Portfolio">
+                        <span class="share-icon">📤</span>
+                    </button>
+                    <div id="navShareMenu" class="nav-share-menu">
+                        <button onclick="shareTo('linkedin')">LinkedIn</button>
+                        <button onclick="shareTo('twitter')">X / Twitter</button>
+                        <button onclick="copyLink()">Copy Link</button>
+                    </div>
+                </div>
+
+                <button id="themeBtn">☀️</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container">
+    <section id="hero" class="hero">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Madhu</span> <span class="wave">👋</span></h1>
+        <h2 class="hero-subtitle">Cloud & DevOps Enthusiast</h2>
+        <p class="hero-description">Building scalable cloud infrastructure and automation-driven deployments.</p>
+        <div class="hero-btns">
+            <a href="#contact" class="btn-primary">Get In Touch</a>
+            <a href="https://github.com/gama-engine" target="_blank" class="btn-secondary">GitHub</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="about-card">
+            <h2 class="about-title">About Me</h2>
+            <p class="about-text">
+                I am a DevOps & Cloud Practitioner with hands-on experience building real-world infrastructure using AWS, Docker, Terraform, CI/CD, and Linux. My journey into DevOps did not start with a traditional software background. It started with curiosity, discipline, and the decision to learn things deeply instead of quickly.<br><br>
+                Outside of tech, I follow a structured fitness and MMA-style training routine, which shaped the way I approach engineering. Consistency, patience, and controlled progress are the principles I apply both in training and in DevOps.
+            </p>
+        </div>
+    </section>
+
+    <!-- =========================
+     SKILLS SECTION
+========================= -->
+
+<section id="skills" class="section">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<p class="section-subtitle">
+Tools & technologies I work with
+</p>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<i class="devicon-docker-plain colored"></i>
+<p>Docker</p>
+</div>
+
+<div class="skill-card">
+<i class="devicon-kubernetes-plain colored"></i>
+<p>Kubernetes</p>
+</div>
+
+<div class="skill-card">
+<i class="devicon-jenkins-line colored"></i>
+<p>Jenkins</p>
+</div>
+
+<div class="skill-card">
+<i class="devicon-terraform-plain colored"></i>
+<p>Terraform</p>
+</div>
+
+<div class="skill-card">
+<i class="devicon-git-plain colored"></i>
+<p>Git</p>
+</div>
+
+<div class="skill-card">
+<i class="devicon-python-plain colored"></i>
+<p>Python</p>
+</div>
+
+<div class="skill-card">
+<i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+<p>AWS</p>
+</div>
+
+<div class="skill-card">
+<i class="devicon-bash-plain colored"></i>
+<p>Bash</p>
+</div>
+
+<div class="skill-card">
+<i class="devicon-ansible-plain colored"></i>
+<p>Ansible</p>
+</div>
+
+<div class="skill-card">
+<i class="devicon-linux-plain colored"></i>
+<p>Linux</p>
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+    <section id="cloud-matrix" class="section">
+        <h2 class="section-title">Cloud Infrastructure <span class="highlight">Matrix</span></h2>
+        <p class="section-subtitle">Categorized by AWS Well-Architected Framework domains.</p>
+        <div class="matrix-grid">
+            <div class="matrix-card project-card">
+                <div class="matrix-header">
+                    <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                    <h3>Compute</h3>
+                </div>
+                <ul>
+                    <li>AWS Lambda (Serverless)</li>
+                    <li>EC2 (Auto Scaling)</li>
+                    <li>Elastic Beanstalk</li>
+                </ul>
+            </div>
+            <div class="matrix-card project-card">
+                <div class="matrix-header">
+                    <i class="devicon-match-plain"></i>
+                    <h3>Networking</h3>
+                </div>
+                <ul>
+                    <li>VPC (Peering/Subnets)</li>
+                    <li>Route 53</li>
+                    <li>CloudFront & OAC</li>
+                </ul>
+            </div>
+            <div class="matrix-card project-card">
+                <div class="matrix-header">
+                    <i class="devicon-terraform-plain"></i>
+                    <h3>IaC & Automation</h3>
+                </div>
+                <ul>
+                    <li>Terraform (HCL)</li>
+                    <li>AWS CLI / SDK</li>
+                    <li>Python (Boto3)</li>
+                </ul>
+            </div>
+            <div class="matrix-card project-card">
+                <div class="matrix-header">
+                    <i class="devicon-ssh-original"></i>
+                    <h3>Security & Storage</h3>
+                </div>
+                <ul>
+                    <li>IAM Policies & Roles</li>
+                    <li>S3 Bucket Policies</li>
+                    <li>Secrets Manager</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Automated infrastructure and cloud deployments</p>
+        <div class="projects-grid" id="projects-container"></div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact-premium">
+            <div class="contact-header">
+                <h2 class="section-title">Let’s Build Something <span class="highlight">Scalable</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-tile project-card" onclick="copyText('gama.engine@gmail.com')">
+                    <div class="tile-icon">📧</div>
+                    <div class="tile-info">
+                        <span>Email Me</span>
+                        <strong>gama.engine@gmail.com</strong>
+                    </div>
+                </div>
+                <div class="contact-tile project-card" onclick="copyText('+919704516607')">
+                    <div class="tile-icon">📞</div>
+                    <div class="tile-info">
+                        <span>Call/WhatsApp</span>
+                        <strong>+91 9704516607</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">GAMA_ENGINE: SYSTEMS_OPERATIONAL</span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <code>v2.4.0-stable</code>
+                <p class="copyright">&copy; 2026 Gaddam Madhukanth</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
