@@ -237,3 +237,39 @@ behavior:"smooth"
 });
 
 });
+
+
+const philosophies = [
+    {
+        text: "कर्म ज्ञानात् श्रेष्ठम् | कर्म ज्ञानात् गरियः",
+        meaning: "Action is superior to knowledge."
+    },
+
+];
+let index = 0;
+
+const textEl = document.getElementById("rotating-text");
+const meaningEl = document.getElementById("rotating-meaning");
+
+function updatePhilosophy() {
+    // fade out
+    textEl.style.opacity = 0;
+    meaningEl.style.opacity = 0;
+
+    setTimeout(() => {
+        textEl.textContent = philosophies[index].text;
+        meaningEl.textContent = philosophies[index].meaning;
+
+        // fade in
+        textEl.style.opacity = 1;
+        meaningEl.style.opacity = 1;
+
+        index = (index + 1) % philosophies.length;
+    }, 500);
+}
+
+// initial load
+updatePhilosophy();
+
+// rotate every 3 seconds
+setInterval(updatePhilosophy, 3000);

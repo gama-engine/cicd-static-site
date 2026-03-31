@@ -1915,3 +1915,131 @@ html::after {
     );
 
 }
+
+#philosophy {
+  padding: 60px 20px;
+  text-align: center;
+  background: #0f172a; /* dark modern background */
+  color: #e5e7eb;
+}
+
+.philosophy-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+#philosophy h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #38bdf8; /* accent */
+}
+
+.philosophy-block {
+  margin-bottom: 25px;
+}
+
+.sanskrit {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.transliteration {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.meaning {
+  font-size: 14px;
+  font-style: italic;
+  color: #cbd5f5;
+}
+
+.closing-line {
+  margin-top: 30px;
+  font-size: 15px;
+  color: #e2e8f0;
+}
+
+.philosophy-block:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-center {
+    text-align: center;
+    flex: 1; /* THIS centers it properly */
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-sanskrit {
+    font-weight: 600;
+}
+
+.footer-meaning {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.footer-sanskrit {
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+.footer-sanskrit {
+    font-weight: 600;
+    color: #38bdf8;
+    transition: opacity 0.5s ease;
+}
+
+.footer-meaning {
+    font-size: 12px;
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+
+.footer-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.footer-sanskrit {
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.footer-english {
+    font-size: 12px;   /* smaller than Sanskrit */
+    opacity: 0.7;      /* slightly subtle */
+    margin-top: 2px;   /* tight spacing */
+}
+
+.footer-english {
+    font-size: 11px;
+    opacity: 0.6;
+    letter-spacing: 0.5px;
+}
