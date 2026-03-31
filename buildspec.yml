@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-version: 0.2
-
-phases:
-  build:
-    commands:
-      - echo "Build started"
-      - ls
-
-artifacts:
-  files:
-    - '**/*'
-=======
 version: 0.2
 
 phases:
@@ -22,11 +9,8 @@ phases:
   post_build:
     commands:
       - echo "Invalidating CloudFront cache..."
-      - aws cloudfront create-invalidation \
-        --distribution-id $DISTRIBUTION_ID \
-        --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
 
 artifacts:
   files:
     - "**/*"
->>>>>>> 7667c9f (second commit)
